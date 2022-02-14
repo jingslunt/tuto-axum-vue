@@ -2,7 +2,7 @@ FROM node:12-buster AS builder
 
 WORKDIR /usr/src/app
 
-COPY package.json package-lock.json .
+COPY package.json package-lock.json ./
 
 RUN npm ci
 
